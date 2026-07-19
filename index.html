@@ -309,7 +309,7 @@
           <div class="gold-border-box directions-box font-serif" style="text-align: left; padding: 20px; width: 100%; max-width: 380px; margin-bottom: 15px;">
             <div class="direction-route" style="display: flex; align-items: flex-start; gap: 8px;">
               <span class="route-bullet" style="color: var(--color-gold-dark);">✦</span>
-              <span class="route-text" style="font-size: 0.85rem; color: var(--color-text-main); line-height: 1.5;"><strong>고속버스터미널역 4번출구</strong> ➔ 성모병원 방면으로 걷기</span>
+              <span class="route-text" style="font-size: 0.85rem; color: var(--color-text-main); line-height: 1.5;"><strong>고속버스터미널역 3번출구</strong> ➔ 성모병원 방면으로 걷기</span>
             </div>
             <div class="direction-route" style="display: flex; align-items: flex-start; gap: 8px; margin-top: 15px;">
               <span class="route-bullet" style="color: var(--color-gold-dark);">✦</span>
@@ -337,68 +337,151 @@
           </div>
 
           <div class="transit-content-card active" id="transit-card-1">
-            <h4 class="font-serif">경로 A : 버스 환승 <span class="text-gold">[약 1시간 45분 소요 | 최소도보]</span></h4>
-            <div class="pretty-timeline">
-              <div class="pretty-timeline-node">
-                <span class="node-icon font-serif">1</span>
-                <div class="node-text">
-                  <h5>진건고등학교 승차 (23687)</h5>
-                  <p>직행버스 <strong>2000번</strong> 탑승 (12:50 이전 탑승 권장)</p>
+            <!-- Route A Summary Header -->
+            <div class="route-summary-header">
+              <div class="duration-box">
+                <span class="time-val">1</span><span class="time-unit">시간</span>
+                <span class="time-val">44</span><span class="time-unit">분</span>
+              </div>
+              <div class="route-meta">
+                <span>12:46 출발 ➔ 14:30 도착 예정</span>
+                <span>환승 1회</span>
+                <span>도보 11분</span>
+                <span>3,400원</span>
+              </div>
+            </div>
+
+            <!-- Segmented Route Bar -->
+            <div class="route-segmented-bar">
+              <div class="bar-segment segment-walk" style="flex-grow: 1;">1분</div>
+              <div class="bar-segment segment-bus-2000" style="flex-grow: 74;">2000 (74분)</div>
+              <div class="bar-segment segment-walk" style="flex-grow: 5;">5분</div>
+              <div class="bar-segment segment-bus-740" style="flex-grow: 16;">740 (16분)</div>
+              <div class="bar-segment segment-walk" style="flex-grow: 5;">5분</div>
+            </div>
+
+            <!-- Naver Map Styled Vertical Timeline -->
+            <div class="naver-timeline">
+              <div class="naver-timeline-node node-start">
+                <div class="naver-node-icon">출</div>
+                <div class="naver-node-content">
+                  <h5>진건고등학교 출발 <span class="text-small" style="color: #868e96; font-weight: normal;">(12:46)</span></h5>
+                  <div class="naver-node-subinfo">
+                    도보 65m · <span class="walk-detail">1분</span>
+                  </div>
                 </div>
               </div>
-              <div class="pretty-timeline-node">
-                <span class="node-icon font-serif">2</span>
-                <div class="node-text">
-                  <h5>2000번 버스 이동 (약 1시간 14분)</h5>
-                  <p>43개 정류장 이동 후 <strong>역삼역4번출구</strong> 정류장 하차</p>
+
+              <div class="naver-timeline-node node-bus-2000">
+                <div class="naver-node-icon">🚌</div>
+                <div class="naver-node-content">
+                  <h5>진건고등학교 승차 <span class="text-small" style="color: #868e96;">(23687)</span></h5>
+                  <p>직행 <strong>2000번</strong> 탑승</p>
+                  <div class="naver-node-subinfo">
+                    <span class="bus-badge badge-red">2000</span> 43개 정류장 이동 · <span class="walk-detail">1시간 14분</span>
+                  </div>
                 </div>
               </div>
-              <div class="pretty-timeline-node">
-                <span class="node-icon font-serif">3</span>
-                <div class="node-text">
-                  <h5>역삼역 4번출구 환승</h5>
-                  <p>하차한 정류장에서 대기 후 간선버스 <strong>740번</strong> 환승 승차</p>
+
+              <div class="naver-timeline-node node-bus-740">
+                <div class="naver-node-icon">🚌</div>
+                <div class="naver-node-content">
+                  <h5>역삼역4번출구 하차 <span class="text-small" style="color: #868e96;">(23283)</span> ➔ 환승</h5>
+                  <p>간선 <strong>740번</strong> 환승 승차</p>
+                  <div class="naver-node-subinfo">
+                    <span class="bus-badge badge-blue">740</span> 9개 정류장 이동 · <span class="walk-detail">16분</span>
+                  </div>
                 </div>
               </div>
-              <div class="pretty-timeline-node">
-                <span class="node-icon font-serif">4</span>
-                <div class="node-text">
-                  <h5>서울성모병원 하차 (약 16분)</h5>
-                  <p>9개 정류장 이동 후 <strong>서울지방조달청.서울성모병원</strong> 하차 ➔ 도보 330m 이동하여 도착</p>
+
+              <div class="naver-timeline-node node-end">
+                <div class="naver-node-icon">도</div>
+                <div class="naver-node-content">
+                  <h5>서울지방조달청.서울성모병원 하차 <span class="text-small" style="color: #868e96;">(22214)</span></h5>
+                  <div class="naver-node-subinfo">
+                    도보 331m · <span class="walk-detail">5분</span> ➔ <strong>옴니버스파크 B3층 로비 최종 도착 (14:30)</strong>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="transit-content-card" id="transit-card-2">
-            <h4 class="font-serif">경로 B : 버스+지하철 <span class="text-gold">[약 1시간 35분 소요 | 최소환승]</span></h4>
-            <div class="pretty-timeline">
-              <div class="pretty-timeline-node">
-                <span class="node-icon font-serif">1</span>
-                <div class="node-text">
-                  <h5>진건고등학교 승차 (23687)</h5>
-                  <p>일반버스 <strong>100번</strong> 탑승 (12:50 승차 시 14:25 도착 예정)</p>
+            <!-- Route B Summary Header -->
+            <div class="route-summary-header">
+              <div class="duration-box">
+                <span class="time-val">1</span><span class="time-unit">시간</span>
+                <span class="time-val">41</span><span class="time-unit">분</span>
+              </div>
+              <div class="route-meta">
+                <span>12:49 출발 ➔ 14:30 도착 예정</span>
+                <span>환승 1회</span>
+                <span>도보 24분</span>
+                <span>3,400원</span>
+              </div>
+            </div>
+
+            <!-- Segmented Route Bar -->
+            <div class="route-segmented-bar">
+              <div class="bar-segment segment-walk" style="flex-grow: 1;">1분</div>
+              <div class="bar-segment segment-bus-2000" style="flex-grow: 55;">2000 (55분)</div>
+              <div class="bar-segment segment-walk" style="flex-grow: 4;">4분</div>
+              <div class="bar-segment segment-subway-2" style="flex-grow: 15;">2호선 (15분)</div>
+              <div class="bar-segment segment-walk" style="flex-grow: 19;">19분</div>
+            </div>
+
+            <!-- Naver Map Styled Vertical Timeline -->
+            <div class="naver-timeline">
+              <div class="naver-timeline-node node-start">
+                <div class="naver-node-icon">출</div>
+                <div class="naver-node-content">
+                  <h5>진건고등학교 출발 <span class="text-small" style="color: #868e96; font-weight: normal;">(12:49)</span></h5>
+                  <div class="naver-node-subinfo">
+                    도보 65m · <span class="walk-detail">1분</span>
+                  </div>
                 </div>
               </div>
-              <div class="pretty-timeline-node">
-                <span class="node-icon font-serif">2</span>
-                <div class="node-text">
-                  <h5>100번 버스 이동 (약 49분)</h5>
-                  <p>24개 정류장 이동 후 <strong>강변역(B)</strong> 정류장 하차</p>
+
+              <div class="naver-timeline-node node-bus-2000">
+                <div class="naver-node-icon">🚌</div>
+                <div class="naver-node-content">
+                  <h5>진건고등학교 승차 <span class="text-small" style="color: #868e96;">(23687)</span></h5>
+                  <p>직행 <strong>2000번</strong> 탑승</p>
+                  <div class="naver-node-subinfo">
+                    <span class="bus-badge badge-red">2000</span> 34개 정류장 이동 · <span class="walk-detail">55분</span>
+                  </div>
                 </div>
               </div>
-              <div class="pretty-timeline-node">
-                <span class="node-icon font-serif">3</span>
-                <div class="node-text">
-                  <h5>지하철 환승 도보 (약 4분)</h5>
-                  <p>강변역 4번 출구까지 166m 도보 이동</p>
+
+              <div class="naver-timeline-node node-subway-2">
+                <div class="naver-node-icon">🚇</div>
+                <div class="naver-node-content">
+                  <h5>잠실역6번출구 하차 <span class="text-small" style="color: #868e96;">(24137)</span> ➔ 환승</h5>
+                  <p>지하철 2호선 잠실역 환승 이동</p>
+                  <div class="naver-node-subinfo">
+                    도보 186m · <span class="walk-detail">4분</span> ➔ 2호선 잠실역 대기
+                  </div>
                 </div>
               </div>
-              <div class="pretty-timeline-node">
-                <span class="node-icon font-serif">4</span>
-                <div class="node-text">
-                  <h5>2호선 강변역 승차 ➔ 서초역 하차 (약 20분)</h5>
-                  <p>잠실나루역 방면 내선순환행 탑승 ➔ 10개 역 이동 후 <strong>서초역</strong> 하차 ➔ 7번 출구에서 성모병원 방면으로 도보 이동</p>
+
+              <div class="naver-timeline-node node-subway-2">
+                <div class="naver-node-icon">🚇</div>
+                <div class="naver-node-content">
+                  <h5>2호선 잠실역 승차</h5>
+                  <p>잠실새내역 방면 내선순환행 탑승</p>
+                  <div class="naver-node-subinfo">
+                    <span class="bus-badge badge-green">2호선</span> 8개 역 이동 (빠른 하차 8-1) · <span class="walk-detail">15분</span> ➔ 서초역 하차
+                  </div>
+                </div>
+              </div>
+
+              <div class="naver-timeline-node node-end">
+                <div class="naver-node-icon">도</div>
+                <div class="naver-node-content">
+                  <h5>서초역 하차 (내리는 문: 오른쪽)</h5>
+                  <div class="naver-node-subinfo">
+                    서초역 7번 출구에서 도보 1.2km · <span class="walk-detail">19분</span> ➔ <strong>옴니버스파크 B3층 로비 최종 도착 (14:30)</strong>
+                  </div>
                 </div>
               </div>
             </div>
@@ -453,6 +536,80 @@
       <div class="final-flower">✦</div>
     </section>
 
+  </div>
+
+  <!-- Hidden Capture Card for Screenshot Generation -->
+  <div class="capture-card font-serif" id="invitation-capture-card" style="display: none;">
+    <div class="floral-frame"></div>
+    
+    <!-- SVG elegant Catholic University logo watermark -->
+    <div class="leaf-svg-container" style="position: absolute; top: 15%; left: 10%; width: 80%; height: 70%; opacity: 0.08; pointer-events: none; z-index: 0;">
+      <svg viewBox="0 0 200 200" style="width: 100%; height: 100%;">
+        <path d="M 25,40 Q 100,18 175,40 L 175,135 Q 100,157 25,135 Z" fill="#0c2e86" />
+        <g fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M 29,44 Q 100,24 171,44 L 171,131 Q 100,151 29,131 Z" stroke-width="1.2" />
+          <path d="M 29,62 Q 100,43 171,62" stroke-width="1.8" />
+          <path d="M 29,113 Q 100,132 171,113" stroke-width="1.8" />
+          <path d="M 40,70 H 160 V 105 H 40 Z" stroke-width="1.5" />
+          <path d="M 74,70 V 105" />
+          <path d="M 108,70 V 105" />
+          <path d="M 40,81 H 74" />
+          <path d="M 57,70 V 81" />
+          <path d="M 40,89 H 74 V 95 H 40 V 101 H 74" stroke-width="1.8" />
+          <path d="M 74,81 H 108" />
+          <path d="M 91,70 V 81" />
+          <path d="M 74,89 H 108 V 95 H 74 V 101 H 108" stroke-width="1.8" />
+          <path d="M 108,77 H 148" />
+          <path d="M 108,84 H 148" />
+          <path d="M 108,91 H 148" />
+          <path d="M 108,98 H 148" />
+        </g>
+        <text x="100" y="54" text-anchor="middle" font-family="'Nanum Myeongjo', serif" font-size="10.5" fill="#ffffff" letter-spacing="4.5" font-weight="bold">CATHOLIC</text>
+        <text x="100" y="125" text-anchor="middle" font-family="'Nanum Myeongjo', serif" font-size="7.5" fill="#ffffff" letter-spacing="1.8" font-weight="bold">UNIVERSITY OF KOREA</text>
+      </svg>
+    </div>
+
+    <div class="capture-header">
+      <p class="subtitle">CAMPUS INVITATION</p>
+      <h1 class="title">꿈이룸학교</h1>
+      <h2 class="sub-title">가톨릭대학교 탐방</h2>
+      <div class="divider">
+        <span class="line"></span>
+        <span class="flower">✦</span>
+        <span class="line"></span>
+      </div>
+      <div class="time-box">
+        <p class="date">2026. 07. 21. TUE</p>
+        <p class="time">14:40 - 18:20</p>
+      </div>
+    </div>
+    
+    <div class="capture-body">
+      <h3 class="schedule-title">탐방 일정</h3>
+      <div class="compact-timeline">
+        <div class="compact-item">
+          <span class="item-time">14:40 - 15:30</span>
+          <span class="item-title">집결, 사진 촬영 & 오리엔테이션</span>
+        </div>
+        <div class="compact-item">
+          <span class="item-time">15:30 - 17:10</span>
+          <span class="item-title">캠퍼스 라운딩 (의대·간호대·성의회관)</span>
+        </div>
+        <div class="compact-item">
+          <span class="item-time">17:10 - 17:50</span>
+          <span class="item-title">맛있는 저녁 식사 (성의교정 학식당)</span>
+        </div>
+        <div class="compact-item">
+          <span class="item-time">17:50 - 18:20</span>
+          <span class="item-title">소통 및 마무리 (기념품 증정)</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="capture-footer">
+      <p class="loc-text">📍 집결장소: 옴니버스파크 L층(B3층) 로비</p>
+      <div class="final-flower">✦</div>
+    </div>
   </div>
 
   <script src="app.js"></script>
