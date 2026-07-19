@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>꿈이룸학교 가톨릭대학교 탐방 초대장</title>
+  <!-- Google Fonts: Playfair Display for Eng Serif, Nanum Myeongjo for Ko Serif, Noto Sans KR for Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="wedding-invitation-theme">
+  <!-- Delicate background texture/particles -->
+  <div class="elegant-overlay"></div>
+
+  <!-- BGM Floating Controller -->
+  <div class="bgm-player" id="bgm-trigger" title="배경음악 재생/정지">
+    <div class="music-note-icon">
+      <span class="note note-1">♫</span>
+      <span class="note note-2">♪</span>
+    </div>
+    <span class="bgm-status font-serif">BGM</span>
+  </div>
+
+  <!-- Mobile Screen Wrapper (mimicking mobile preview) -->
+  <div class="mobile-container">
+    
+    <!-- Cover Section -->
+    <section class="invitation-section cover-section">
+      <div class="floral-frame">
+        <!-- SVG elegant gold Catholic University logo watermark (Accurate CUK Design) -->
+        <svg viewBox="0 0 200 200" class="leaf-svg">
+          <!-- Outer Shield Cushion Filled with CUK Intelligent Blue -->
+          <path d="M 25,40 Q 100,18 175,40 L 175,135 Q 100,157 25,135 Z" fill="#0c2e86" />
+          
+          <g fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Outer Shield Cushion Inner Line -->
+            <path d="M 29,44 Q 100,24 171,44 L 171,131 Q 100,151 29,131 Z" stroke-width="1.2" />
+            
+            <!-- Top banner curved line -->
+            <path d="M 29,62 Q 100,43 171,62" stroke-width="1.8" />
+            <!-- Bottom banner curved line -->
+            <path d="M 29,113 Q 100,132 171,113" stroke-width="1.8" />
+            
+            <!-- Central graphic box frame (straight lines) -->
+            <path d="M 40,70 H 160 V 105 H 40 Z" stroke-width="1.5" />
+            
+            <!-- Central graphic details -->
+            <!-- Vertical dividing lines -->
+            <path d="M 74,70 V 105" />
+            <path d="M 108,70 V 105" />
+            
+            <!-- Left graphic: "ㄱ" shape at top, "ㄹ" at bottom -->
+            <path d="M 40,81 H 74" />
+            <path d="M 57,70 V 81" />
+            <path d="M 40,89 H 74 V 95 H 40 V 101 H 74" stroke-width="1.8" />
+            
+            <!-- Center graphic: a loop/maze representing "ㄹ" in the middle -->
+            <path d="M 74,81 H 108" />
+            <path d="M 91,70 V 81" />
+            <path d="M 74,89 H 108 V 95 H 74 V 101 H 108" stroke-width="1.8" />
+            
+            <!-- Right graphic: 4 horizontal bars (comb style representing letters) -->
+            <path d="M 108,77 H 148" />
+            <path d="M 108,84 H 148" />
+            <path d="M 108,91 H 148" />
+            <path d="M 108,98 H 148" />
+          </g>
+          <!-- Text elements styled in white -->
+          <text x="100" y="54" text-anchor="middle" font-family="'Nanum Myeongjo', serif" font-size="10.5" fill="#ffffff" letter-spacing="4.5" font-weight="bold">CATHOLIC</text>
+          <text x="100" y="125" text-anchor="middle" font-family="'Nanum Myeongjo', serif" font-size="7.5" fill="#ffffff" letter-spacing="1.8" font-weight="bold">UNIVERSITY OF KOREA</text>
+        </svg>
+      </div>
+      <div class="cover-content">
+        <p class="subtitle font-serif">CAMPUS INVITATION</p>
+        <div class="main-title-box">
+          <h1 class="main-title font-serif">꿈이룸학교</h1>
+          <h2 class="sub-title font-serif">가톨릭대학교 탐방</h2>
+        </div>
+        <div class="divider">
+          <span class="line"></span>
+          <span class="flower">✦</span>
+          <span class="line"></span>
+        </div>
+        <p class="date font-serif">2026. 07. 21. TUE</p>
+        <p class="time">오후 2시 40분</p>
+        <p class="location font-serif text-gold">옴니버스 파크 B3 Lobby층 (L층)</p>
+      </div>
+      <div class="scroll-arrow">
+        <span>▼</span>
+      </div>
+    </section>
+
+    <!-- Schedule Timeline Section -->
+    <section class="invitation-section schedule-section">
+      <div class="section-header">
+        <span class="deco-icon">✦</span>
+        <h3 class="section-title font-serif">탐방 일정</h3>
+        <p class="timeline-notice font-serif text-small" style="margin-top: 10px; color: var(--color-text-sub); font-style: italic;">※ 탐방 일정은 상황에 따라 수정될 수 있습니다.</p>
+      </div>
+      <div class="timeline">
+        <!-- 1) 오티 -->
+        <div class="timeline-group-header font-serif">1) 오리엔테이션 (OT)</div>
+        
+        <div class="timeline-item">
+          <div class="time-label font-serif">14 : 40</div>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <h4 class="timeline-title font-serif">집결 및 사진 촬영</h4>
+            <p class="timeline-desc"><strong>장소:</strong> 옴니버스파크 로비 (L층 집합지)<br><strong>내용:</strong> 단체 기념 사진 촬영 및 인원 파악 (오후 3시 정각 투어 시작을 위해 14:40까지 필히 도착)</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="time-label font-serif">15:00 - 15:30</div>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <h4 class="timeline-title font-serif">오리엔테이션 (OT) 및 소개</h4>
+            <p class="timeline-desc"><strong>장소:</strong> 옴니버스 의과대학 TBL실<br><strong>내용:</strong> 가홍이 소개 및 투어 안내 프레젠테이션</p>
+          </div>
+        </div>
+
+        <!-- 2) 라운딩 -->
+        <div class="timeline-group-header font-serif">2) 캠퍼스 라운딩 (투어)</div>
+
+        <div class="timeline-item">
+          <div class="time-label font-serif">15:30 - 15:40</div>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <h4 class="timeline-title font-serif">의과대학 강의 시설 견학</h4>
+            <p class="timeline-desc"><strong>장소:</strong> 옴니버스파크 1층 (야외정원 엘베로 이동)<br><strong>내용:</strong> 의대 대강의실 및 러닝스페이스 투어</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time-label font-serif">15:40 - 15:45</div>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <h4 class="timeline-title font-serif">축제 광장 설명</h4>
+            <p class="timeline-desc"><strong>장소:</strong> 옴니버스파크 2층 야외정원<br><strong>내용:</strong> 캠퍼스 야외정원 및 주요 축제 장소 안내</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time-label font-serif">15:45 - 15:55</div>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <h4 class="timeline-title font-serif">간호대학 주요 시설 견학</h4>
+            <p class="timeline-desc"><strong>장소:</strong> 옴니버스파크 2층 간호대학<br><strong>내용:</strong> 대강의실, 중강의실, PBL실, 여학생 휴게실</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time-label font-serif">15:55 - 16:05</div>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <h4 class="timeline-title font-serif">플레이그라운드 견학</h4>
+            <p class="timeline-desc"><strong>장소:</strong> L3 플레이그라운드 (엘베 이동)</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time-label font-serif">16:05 - 16:10</div>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <h4 class="timeline-title font-serif">러닝그라운드 견학</h4>
+            <p class="timeline-desc"><strong>장소:</strong> L2 러닝그라운드 (엘베 이동)</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time-label font-serif">16:10 - 16:15</div>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <h4 class="timeline-title font-serif">로비층 편의 인프라 설명</h4>
+            <p class="timeline-desc"><strong>장소:</strong> 옴니버스파크 B3 로비층 (엘베 이동)<br><strong>내용:</strong> 플렌티(Plenty), 컨벤션홀, 편의점 및 꽃집 투어</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time-label font-serif">16:15 - 16:30</div>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <h4 class="timeline-title font-serif">라온센터 견학</h4>
+            <p class="timeline-desc"><strong>장소:</strong> 성모병원별관 라온센터</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time-label font-serif">16:30 - 16:50</div>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <h4 class="timeline-title font-serif">요나센터 및 동아리방 소개</h4>
+            <p class="timeline-desc"><strong>장소:</strong> 성모병원별관 요나센터<br><strong>내용:</strong> 라온센터에서 이동 후 동아리방 탐방</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time-label font-serif">16:50 - 17:00</div>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <h4 class="timeline-title font-serif">성의회관 도서관 견학</h4>
+            <p class="timeline-desc"><strong>장소:</strong> 성의회관 10, 11층 도서관</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time-label font-serif">17:00 - 17:05</div>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <h4 class="timeline-title font-serif">성의회관 열람실 견학</h4>
+            <p class="timeline-desc"><strong>장소:</strong> 성의회관 9층 열람실</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time-label font-serif">17:05 - 17:10</div>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <h4 class="timeline-title font-serif">스타트센터 견학</h4>
+            <p class="timeline-desc"><strong>장소:</strong> 성의회관 8층 스타트센터</p>
+          </div>
+        </div>
+
+        <!-- 3) 식사 -->
+        <div class="timeline-group-header font-serif">3) 맛있는 저녁 식사</div>
+
+        <div class="timeline-item">
+          <div class="time-label font-serif">17:10 - 17:50</div>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <h4 class="timeline-title font-serif">학식 제공 (식사 시간)</h4>
+            <p class="timeline-desc"><strong>장소:</strong> 성의교정 학식당<br><strong>안내:</strong> 대학 학식을 함께 무료로 맛본 뒤, 17:50분까지 의대 TBL실로 복귀</p>
+          </div>
+        </div>
+
+        <!-- 4) 마무리 및 선물증정 -->
+        <div class="timeline-group-header font-serif">4) 마무리 및 선물 증정</div>
+
+        <div class="timeline-item">
+          <div class="time-label font-serif">17:50 - 18:20</div>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <h4 class="timeline-title font-serif">소통 및 마무리</h4>
+            <p class="timeline-desc"><strong>장소:</strong> 옴니버스 의과대학 TBL실<br><strong>내용:</strong> 투어 발표 마무리 진행, 질의응답(Q&A), 기념 선물 증정 및 소중한 추억을 남기는 사진 촬영</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Building Guide Section (Layer stack style) -->
+    <section class="invitation-section building-section">
+      <div class="section-header">
+        <span class="deco-icon">✦</span>
+        <h3 class="section-title font-serif">공간 안내 (옴니버스 파크)</h3>
+      </div>
+      
+      <p class="section-intro">옴니버스 파크는 의과대학, 연구동, 간호대학이 모인 복합 융합 공간입니다.</p>
+
+      <!-- Building Aerial Photo Container -->
+      <div class="building-photo-container">
+        <img src="omnibus_park_aerial.jpg" alt="옴니버스 파크 건물 전경" class="elegant-building-img">
+      </div>
+    </section>
+
+    <!-- Map & Directions Section -->
+    <section class="invitation-section map-section">
+      <div class="section-header">
+        <span class="deco-icon">✦</span>
+        <h3 class="section-title font-serif">오는 길</h3>
+      </div>
+
+      <!-- Tabs to switch between walking route and public transit -->
+      <div class="direction-tabs">
+        <button class="dir-tab-btn active" id="tab-btn-walk" data-route="walk">도보 경로 (지하철역)</button>
+        <button class="dir-tab-btn" id="tab-btn-transit" data-route="transit">대중교통 (진건고 출발)</button>
+      </div>
+
+      <!-- Map display container -->
+      <div class="map-view-wrapper">
+        <!-- Walk Route -->
+        <div class="map-display-box active" id="map-view-walk">
+          <div class="gold-border-box directions-box font-serif" style="text-align: left; padding: 20px; width: 100%; max-width: 380px; margin-bottom: 15px;">
+            <div class="direction-route" style="display: flex; align-items: flex-start; gap: 8px;">
+              <span class="route-bullet" style="color: var(--color-gold-dark);">✦</span>
+              <span class="route-text" style="font-size: 0.85rem; color: var(--color-text-main); line-height: 1.5;"><strong>고속버스터미널역 4번출구</strong> ➔ 성모병원 방면으로 걷기</span>
+            </div>
+            <div class="direction-route" style="display: flex; align-items: flex-start; gap: 8px; margin-top: 15px;">
+              <span class="route-bullet" style="color: var(--color-gold-dark);">✦</span>
+              <span class="route-text" style="font-size: 0.85rem; color: var(--color-text-main); line-height: 1.5;"><strong>서초역 7번출구</strong> ➔ 성모병원 방면으로 걷기</span>
+            </div>
+          </div>
+          
+          <div class="route-summary-card">
+            <h4 class="font-serif">상세 도보 가이드</h4>
+            <p class="summary-text font-serif text-gold">지하철역 출구에서 성모병원 방면 도보 약 10~14분 소요</p>
+            <ol class="step-ol text-small">
+              <li>출구로 나와 반포대로 방향으로 진입</li>
+              <li>서울성모병원 사거리 방향으로 직진 후 횡단보도 건너기</li>
+              <li>반포대로를 따라 성모병원 방면으로 계속 이동</li>
+              <li>가톨릭대학교 성의교정 입구로 진입하여 B3 Lobby층으로 도착</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Transit Route (Step Flow) -->
+        <div class="map-display-box" id="map-view-transit">
+          <div class="transit-options-box">
+            <button class="mini-transit-tab active" id="transit-opt-1" data-opt="1">대중교통 경로 A (버스 환승)</button>
+            <button class="mini-transit-tab" id="transit-opt-2" data-opt="2">대중교통 경로 B (2호선 지하철)</button>
+          </div>
+
+          <div class="transit-content-card active" id="transit-card-1">
+            <h4 class="font-serif">경로 A : 버스 환승 코스 <span class="text-gold">[약 1시간 45분 소요 | 최소도보]</span></h4>
+            <div class="pretty-timeline">
+              <div class="pretty-timeline-node">
+                <span class="node-icon font-serif">1</span>
+                <div class="node-text">
+                  <h5>진건고등학교 승차 (23687)</h5>
+                  <p>직행버스 <strong>2000번</strong> 탑승 (12:50 이전 탑승 권장)</p>
+                </div>
+              </div>
+              <div class="pretty-timeline-node">
+                <span class="node-icon font-serif">2</span>
+                <div class="node-text">
+                  <h5>2000번 버스 이동 (약 1시간 14분)</h5>
+                  <p>43개 정류장 이동 후 <strong>역삼역4번출구</strong> 정류장 하차</p>
+                </div>
+              </div>
+              <div class="pretty-timeline-node">
+                <span class="node-icon font-serif">3</span>
+                <div class="node-text">
+                  <h5>역삼역 4번출구 환승</h5>
+                  <p>하차한 정류장에서 대기 후 간선버스 <strong>740번</strong> 환승 승차</p>
+                </div>
+              </div>
+              <div class="pretty-timeline-node">
+                <span class="node-icon font-serif">4</span>
+                <div class="node-text">
+                  <h5>서울성모병원 하차 (약 16분)</h5>
+                  <p>9개 정류장 이동 후 <strong>서울지방조달청.서울성모병원</strong> 하차 ➔ 도보 330m 이동하여 도착</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="transit-content-card" id="transit-card-2">
+            <h4 class="font-serif">경로 B : 버스 + 지하철 코스 <span class="text-gold">[약 1시간 35분 소요 | 최소환승]</span></h4>
+            <div class="pretty-timeline">
+              <div class="pretty-timeline-node">
+                <span class="node-icon font-serif">1</span>
+                <div class="node-text">
+                  <h5>진건고등학교 승차 (23687)</h5>
+                  <p>일반버스 <strong>100번</strong> 탑승 (12:50 승차 시 14:25 도착 예정)</p>
+                </div>
+              </div>
+              <div class="pretty-timeline-node">
+                <span class="node-icon font-serif">2</span>
+                <div class="node-text">
+                  <h5>100번 버스 이동 (약 49분)</h5>
+                  <p>24개 정류장 이동 후 <strong>강변역(B)</strong> 정류장 하차</p>
+                </div>
+              </div>
+              <div class="pretty-timeline-node">
+                <span class="node-icon font-serif">3</span>
+                <div class="node-text">
+                  <h5>지하철 환승 도보 (약 4분)</h5>
+                  <p>강변역 4번 출구까지 166m 도보 이동</p>
+                </div>
+              </div>
+              <div class="pretty-timeline-node">
+                <span class="node-icon font-serif">4</span>
+                <div class="node-text">
+                  <h5>2호선 강변역 승차 ➔ 서초역 하차 (약 20분)</h5>
+                  <p>잠실나루역 방면 내선순환행 탑승 ➔ 10개 역 이동 후 <strong>서초역</strong> 하차 ➔ 7번 출구에서 성모병원 방면으로 도보 이동</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map App Links Buttons (Always visible) -->
+      <div class="map-link-buttons" style="margin-top: 15px; width: 100%; max-width: 380px;">
+        <a href="https://map.naver.com/v5/search/%EA%B0%80%ED%86%A8%EB%A6%AD%EB%8C%80%ED%95%99%EA%B5%90%20%EC%98%B4%EB%8B%88%EB%B2%84%EC%8A%A4%ED%8C%8C%ED%81%AC" target="_blank" class="map-link-btn">네이버 지도 앱 열기</a>
+        <a href="https://map.kakao.com/?q=%EA%B0%80%ED%86%A8%EB%A6%AD%EB%8C%80%ED%95%99%EA%B5%90%20%EC%98%B4%EB%8B%88%EB%B2%84%EC%8A%A4%ED%8C%8C%ED%81%AC" target="_blank" class="map-link-btn">카카오맵 앱 열기</a>
+      </div>
+    </section>
+
+    <!-- Important Information Details -->
+    <section class="invitation-section info-section-notes">
+      <div class="section-header">
+        <span class="deco-icon">✦</span>
+        <h3 class="section-title font-serif">참가자 안내사항</h3>
+      </div>
+      <div class="gold-border-box">
+        <ul class="notes-ul font-serif">
+          <li><strong>집합 일시 :</strong> 7월 21일 화요일 14시 40분 (3시 투어 시작)</li>
+          <li><strong>지각 및 노쇼 절대 금지 :</strong> 인원 점검 및 탐방이 바로 시작되므로 정시 준수를 부탁드립니다.</li>
+          <li><strong>단톡방 확인 :</strong> 당일 공지 및 소통을 위해 단체 톡방을 지속적으로 확인해주세요.</li>
+          <li><strong>보고서 제출 :</strong> 탐방 후 **7월 22일 자정까지** 보고서 제출이 완료되어야 합니다. (리로-창체-꼬드림플러스)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contacts / Greeting Footer -->
+    <section class="invitation-section contact-section">
+      <div class="section-header">
+        <span class="deco-icon">✦</span>
+        <h3 class="section-title font-serif">안내 및 긴급 연락</h3>
+      </div>
+      <p class="contact-desc">탐방 관련 문의사항이나 부득이한 지각 연락은 아래 연락처로 연락 주시기 바랍니다.</p>
+      
+      <div class="call-card">
+        <div class="person font-serif">인솔 및 총괄 교사</div>
+        <div class="name font-serif text-gold-bold">박소영 선생님</div>
+        <a href="tel:010-4982-2816" class="call-btn font-serif">전화 문의하기</a>
+      </div>
+      
+      <div class="final-flower">✦</div>
+      <p class="footer-copyright font-serif">© 2026 꿈이룸학교 대학 탐방 기획위원회</p>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
