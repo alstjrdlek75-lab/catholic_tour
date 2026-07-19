@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 /* Elegant Mobile Wedding Invitation Style CSS */
 
 :root {
@@ -96,7 +92,7 @@ body.wedding-invitation-theme {
   letter-spacing: 2px;
   border-bottom: 1px solid rgba(212, 179, 141, 0.3);
   padding-bottom: 10px;
-  width: fit-content;
+  width: 120px;
 }
 
 .font-serif {
@@ -188,71 +184,24 @@ body.wedding-invitation-theme {
   color: var(--color-gold);
 }
 
-.cover-info-card {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 18px 20px;
-  border-top: 1px solid rgba(212, 179, 141, 0.35);
-  border-bottom: 1px solid rgba(212, 179, 141, 0.35);
-  text-align: center;
-  width: 100%;
-  max-width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-
-.cover-info-card .date {
-  font-size: 1.25rem;
+.cover-content .date {
+  font-size: 1.15rem;
   font-weight: 700;
-  color: var(--color-text-main);
   letter-spacing: 2px;
+  margin-bottom: 5px;
+  color: var(--color-text-main);
 }
 
-.cover-info-card .time {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--color-text-main);
+.cover-content .time {
+  font-size: 0.9rem;
+  color: var(--color-text-sub);
+  margin-bottom: 15px;
   letter-spacing: 1px;
 }
 
-.cover-info-card .location {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--color-gold-dark);
-  letter-spacing: 0.5px;
-}
-
-/* Cover Page Table of Contents Menu */
-.cover-toc {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 0.8rem;
-  z-index: 10;
-}
-
-.cover-toc a {
-  color: var(--color-gold-dark);
-  text-decoration: none;
-  transition: all 0.2s;
+.cover-content .location {
+  font-size: 0.95rem;
   letter-spacing: 1px;
-  font-weight: 500;
-  border-bottom: 0.5px solid transparent;
-  padding-bottom: 2px;
-}
-
-.cover-toc a:hover {
-  color: var(--color-text-main);
-  border-bottom-color: var(--color-gold);
-}
-
-.toc-bar {
-  color: rgba(212, 179, 141, 0.4);
-  font-size: 0.7rem;
-  pointer-events: none;
 }
 
 .scroll-arrow {
@@ -342,15 +291,6 @@ body.wedding-invitation-theme {
 
 .timeline-panel {
   padding-left: 28px;
-}
-
-.timeline-panel.highlighted-panel {
-  margin-left: 18px;
-  padding: 12px 16px;
-  border: 1px solid var(--color-gold-dark);
-  background-color: var(--color-gold-light);
-  border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(164, 132, 100, 0.08);
 }
 
 .timeline-title {
